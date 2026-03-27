@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import Navbar from "./Navigation";
 import Footer from "../components/Footer";
 
 function Home() {
   return (
     <main className="homepageContainer">
+
       <section className="welcomeImage">
         <h1>DAMELIEF</h1>
         <p>Lorem ipsum dolor..</p>
@@ -29,6 +29,7 @@ function Home() {
           </ul>
         </article> 
       </section>
+
     </main>
   );
 }
