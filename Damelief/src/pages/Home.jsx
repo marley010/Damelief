@@ -4,17 +4,32 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      
-      <section className="content">
-        <h2>Welkom!</h2>
-        <p>Dit is jouw React website template.</p>
+    <main className="homepageContainer">
+      <section className="welcomeImage">
+        <h1>DAMELIEF</h1>
+        <p>Lorem ipsum dolor..</p>
+        <p>Ms. Hatice</p>
       </section>
 
-      <Footer />
-    </>
+      <div className="sloganDiv">
+        <p>'Wees lief voor jezelf, dame.'</p>
+      </div>
+
+      <section className="homepageContent">
+        <article>
+          <h2>WELCOME, VISITOR.</h2>
+          <div className="lineDecor"></div>
+          <p>Lorem ipsum...</p>
+        </article>
+
+        <article className="FAQContainer">
+          <h3>VEELGESTELDE VRAGEN</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </article> 
+      </section>
+    </main>
   );
 }
 
