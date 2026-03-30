@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       
       <section className="content">
@@ -13,7 +12,6 @@ function Home() {
         <p>Dit is jouw React website template.</p>
       </section>
 
-      <Footer />
     </>
   );
 }
