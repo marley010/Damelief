@@ -1,4 +1,30 @@
-.navbar__list__button:hover {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CEE4D8;
+  padding: 0 2rem;
+  height: 70px;
+}
+.navbar__title {
+  font-size: 1.5rem;
   cursor: pointer;
-  color: blueviolet;
+}
+.navbar__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.navbar__list-item {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.navbar__list-item:hover {
+  background-color: #9bcab0;
+  box-shadow: 1px -1px 8px 0px rgba(0, 0, 0, 0.33) inset;
+}
+.navbar__list-item:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=Navbar.css.map */

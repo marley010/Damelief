@@ -1,3 +1,21 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__content {
+  flex: 1; /* duwt footer naar beneden bij korte content */
+}
+
 .footer {
   background-color: #CEE4D8;
   width: 100%;
@@ -9,7 +27,6 @@
   align-items: center;
 }
 
-/* tekst */
 .p_footer {
   margin: 5px 0;
 }
@@ -29,7 +46,6 @@
   margin: 5px 0;
 }
 
-/* button */
 .footer_button {
   display: inline-block;
   margin: 30px;
