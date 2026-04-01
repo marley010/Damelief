@@ -12,6 +12,7 @@ function Navbar() {
         <li className="navbar__list__button" onClick={() => navigate("/aanbod")}>Aanbod</li>
         <li className="navbar__list__button" onClick={() => navigate("/over-ons")}>Over Ons</li>
         <li className="navbar__list__button" onClick={() => navigate("/contact")}>Contact</li>
+        <li className="navbar__list__button" onClick={() => navigate("/afspraak-maken")}>Afspraak Maken</li>
       </ul>
     </nav>
   );

@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "../styling/Contact/Contact.css";
+import "../styling/AfspraakMaken/AfspraakMaken.css";
 
-function Contact() {
+function AfspraakMaken() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
-    email: "",
     phone: "",
+    email: "",
+    date: "",
     message: "",
   });
 
@@ -18,16 +19,17 @@ function Contact() {
     setFormData({
       firstname: e.target.firstname.value,
       lastname: e.target.lastname.value,
-      email: e.target.email.value,
       phone: e.target.phone.value,
+      email: e.target.email.value,
+      date: e.target.date.value,
       message: e.target.message.value,
     });
     console.log(formData);
   };
   return (
     <section className="contact">
-      <h1>Contact</h1>
-      <p>Dit is de contact pagina.</p>
+      <h1>Afspraak Maken</h1>
+      <p>Dit is de afspraak maken pagina.</p>
       <form className="contact__form" onSubmit={submitForm}>
         <div className="contact__form__container-double">
           <div>
@@ -56,18 +58,6 @@ function Contact() {
           </div>
         </div>
         <div className="contact__form__container">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
-          />
-        </div>
-        <div className="contact__form__container">
           <label htmlFor="phone">Telefoonnummer:</label>
           <input
             type="tel"
@@ -80,7 +70,29 @@ function Contact() {
           />
         </div>
         <div className="contact__form__container">
-          <label htmlFor="message">Persoonlijk bericht:</label>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
+          />
+        </div>
+        <div className="contact__form__container">
+          <label htmlFor="date">Datum:</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value={formData.date}
+            onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+          />
+        </div>
+        <div className="contact__form__container">
+          <label htmlFor="message">Bericht:</label>
           <textarea
             id="message"
             name="message"
@@ -101,4 +113,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default AfspraakMaken;
