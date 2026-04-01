@@ -1,57 +1,47 @@
+/* Footer Block */
 .footer {
-    background-color: #CEE4D8;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    min-height: 50vh;
-
-    display: flex;
-    flex-direction: column;   /* onder elkaar */
-    justify-content: center;  /* verticaal centreren */
-    align-items: center;      /* horizontaal centreren */
+  background-color: #cee4d8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Elements */
 }
-
-.p_footer {
-    margin: 5px 0;
+.footer__title {
+  font-size: 40px;
+  margin: 10px;
 }
-
-.title {
-    font-size: 10px;
-    font-weight: bold;
-    padding: 10px;
+.footer__text {
+  margin: 5px 0;
 }
-
-.subtitle {
-    font-size: 40px; /* groter maken */
-    margin: 10px;
+.footer__description {
+  margin: 5px 0;
 }
-
-.p_small{
-    margin: 5px 0;
+.footer__button {
+  display: inline-block;
+  margin: 30px;
+  padding: 14px 24px;
+  background: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  /* Button States */
 }
-
-.footer_button {
-    display: inline-block;
-    margin: 30px;
-    padding: 14px 24px;
-    background: white;    
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
+.footer__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
-
-.footer_button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.footer_button:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-}
+.footer__button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}/*# sourceMappingURL=Footer.css.map */

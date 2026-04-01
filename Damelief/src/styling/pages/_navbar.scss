@@ -1,0 +1,10 @@
+.navbar {
+  &__list {
+    &__button {
+      &:hover {
+        cursor: pointer;
+        color: blueviolet;
+      }
+    }
+  }
+}
