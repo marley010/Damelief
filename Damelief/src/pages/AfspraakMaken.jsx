@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "../styling/AfspraakMaken/AfspraakMaken.css";
+
 
 function AfspraakMaken() {
   const navigate = useNavigate();
