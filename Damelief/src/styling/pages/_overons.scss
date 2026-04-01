@@ -1,0 +1,84 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  // Background Image Element
+  &__background-image {
+    position: absolute;
+    inset: 0;
+    background: url("/images/background.jpg") center / cover no-repeat;
+    z-index: -2;
+    filter: brightness(0.6);
+  }
+
+  // Fade Gradient Elements
+  &__fade {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+
+    // Fade Top Modifier
+    &--top {
+      top: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+    }
+
+    // Fade Bottom Modifier
+    &--bottom {
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    }
+  }
+
+  // Content Container Element
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  // Text Bubble Element
+  &__text-bubble {
+    max-width: 600px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: all 0.3s ease;
+
+    // Text Bubble Hover
+    &:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    // Paragraph inside bubble
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 600px) {
+    &__text-bubble {
+      padding: 20px;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

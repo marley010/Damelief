@@ -1,14 +1,16 @@
 import { Home, Aanbod, OverOns, Contact, AfspraakMaken } from "./pages";
 import { Navbar, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
-import "./styling/global.css";
+import "./styling/global.scss";
 
 function App() {
   return (
-    <div className="page">
+
+      <>
+      
       <Navbar />
 
-      <main className="page__content">
+
         <Routes>
           <Route index element={<Home />} />
           <Route path="/aanbod" element={<Aanbod />} />
@@ -16,10 +18,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/afspraak-maken" element={<AfspraakMaken />} />
         </Routes>
-      </main>
 
       <Footer />
-    </div>
+      </>
+
   );
 }
 
