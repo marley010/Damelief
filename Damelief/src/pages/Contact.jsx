@@ -26,11 +26,27 @@ function Contact() {
   };
   return (
     <section className="contact">
-      <h1>Contact</h1>
-      <p>Dit is de contact pagina.</p>
+      <div className="contact__headerText">
+      <h1>CONTACT</h1>
+      <p>Vragen? Neem contact op!</p>
+      </div>
+      <section className="contact__box">
+        <div className="contact__box__images">
+         
+        </div>
+        <div className="contact__socials">
+          <h2>Contact gegevens</h2>
+          <div className="line"></div>
+          <p className="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero  dolor, iaculis vitae sodales ac, consectetur vitae urna. Lorem ipsum.</p>
+          <p>Vragen zelf opzoeken?</p>
+        <button>
+          Veelgestelde Vragen
+        </button>
+
+        </div>
       <form className="contact__form" onSubmit={submitForm}>
         <div className="contact__form__container-double">
-          <div>
+          <div className="contact__form__container">
             <label htmlFor="firstname">Voornaam:</label>
             <input
               type="text"
@@ -42,7 +58,7 @@ function Contact() {
               }
             />
           </div>
-          <div>
+          <div className="contact__form__container">
             <label htmlFor="lastname">Achternaam:</label>
             <input
               type="text"
@@ -94,6 +110,7 @@ function Contact() {
           Verstuur
         </button>
       </form>
+      </section>
       <button className="contact__button" onClick={() => navigate(-1)}>
         Back
       </button>

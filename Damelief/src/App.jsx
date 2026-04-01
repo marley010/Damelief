@@ -5,10 +5,12 @@ import Contact from "./pages/Contact";
 import AfspraakMaken from "./pages/AfspraakMaken";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import Navbar from "./pages/Navigation";
 
 function App() {
   return (
     <>
+    <Navbar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/aanbod" element={<Aanbod />} />

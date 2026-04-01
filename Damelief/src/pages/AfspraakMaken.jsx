@@ -27,11 +27,11 @@ function AfspraakMaken() {
     console.log(formData);
   };
   return (
-    <section className="contact">
+    <section className="afspraak">
       <h1>Afspraak Maken</h1>
       <p>Dit is de afspraak maken pagina.</p>
-      <form className="contact__form" onSubmit={submitForm}>
-        <div className="contact__form__container-double">
+      <form className="afspraak__form" onSubmit={submitForm}>
+        <div className="afspraak__form__container-double">
           <div>
             <label htmlFor="firstname">Voornaam:</label>
             <input
@@ -57,7 +57,7 @@ function AfspraakMaken() {
             />
           </div>
         </div>
-        <div className="contact__form__container">
+        <div className="afspraak__form__container">
           <label htmlFor="phone">Telefoonnummer:</label>
           <input
             type="tel"
@@ -69,7 +69,7 @@ function AfspraakMaken() {
             }
           />
         </div>
-        <div className="contact__form__container">
+        <div className="afspraak__form__container">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -81,7 +81,7 @@ function AfspraakMaken() {
             }
           />
         </div>
-        <div className="contact__form__container">
+        <div className="afspraak__form__container">
           <label htmlFor="date">Datum:</label>
           <input
             type="date"
@@ -91,7 +91,7 @@ function AfspraakMaken() {
             onChange={(e) => setFormData({ ...formData, date: e.target.value })}
           />
         </div>
-        <div className="contact__form__container">
+        <div className="afspraak__form__container">
           <label htmlFor="message">Bericht:</label>
           <textarea
             id="message"
@@ -102,11 +102,11 @@ function AfspraakMaken() {
             }
           ></textarea>
         </div>
-        <button className="contact__form__button" type="submit">
+        <button className="afspraak__form__button" type="submit">
           Verstuur
         </button>
       </form>
-      <button className="contact__button" onClick={() => navigate(-1)}>
+      <button className="afspraak__button" onClick={() => navigate(-1)}>
         Back
       </button>
     </section>
