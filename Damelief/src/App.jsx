@@ -5,17 +5,23 @@ import "./styling/global.scss";
 
 function App() {
   return (
-    <>
-    <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/aanbod" element={<Aanbod />} />
-        <Route path="/over-ons" element={<OverOns />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/afspraak-maken" element={<AfspraakMaken />} />
-      </Routes>
-      {/* <Footer /> */}
-    </>
+
+      <>
+      
+      <Navbar />
+
+
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/aanbod" element={<Aanbod />} />
+          <Route path="/over-ons" element={<OverOns />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/afspraak-maken" element={<AfspraakMaken />} />
+        </Routes>
+
+      <Footer />
+      </>
+
   );
 }
 

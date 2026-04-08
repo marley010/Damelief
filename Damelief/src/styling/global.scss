@@ -5,6 +5,7 @@
 // Styles for individual pages
 @import "./pages/contact";
 @import "./pages/afspraak";
+@import "./pages/overons";
 
 // Styles for components
 @import "./components/navbar";
@@ -15,6 +16,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+// .page {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
+// }
+
+// .page__content {
+//   flex: 1; /* duwt footer naar beneden bij korte content */
+// }
 
 p,
 h1,

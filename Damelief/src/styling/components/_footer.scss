@@ -1,9 +1,5 @@
-/* Footer Block */
 .footer {
   background-color: #cee4d8;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   min-height: 50vh;
   display: flex;
@@ -11,25 +7,25 @@
   justify-content: center;
   align-items: center;
 
-  /* Elements */
+  // Title Element
   &__title {
     font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
     margin: 10px;
   }
 
-  &__text {
-    margin: 5px 0;
-  }
-
+  // Description Element
   &__description {
     margin: 5px 0;
   }
 
+  // Button Element
   &__button {
     display: inline-block;
     margin: 30px;
     padding: 14px 24px;
-    background: white;
+    background-color: white;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -39,12 +35,13 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 
-    /* Button States */
+    // Button Hover State
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
+    // Button Active State
     &:active {
       transform: translateY(0);
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
