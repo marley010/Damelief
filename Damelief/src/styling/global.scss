@@ -1,0 +1,27 @@
+// Global variables and mixins
+@import "./variables";
+@import "./fonts";
+
+// Styles for individual pages
+@import "./pages/contact";
+@import "./pages/afspraak";
+
+// Styles for components
+@import "./pages/navbar";
+@import "./pages/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+}

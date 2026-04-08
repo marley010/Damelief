@@ -1,11 +1,7 @@
-import Home from "./pages/Home";
-import Aanbod from "./pages/Aanbod";
-import OverOns from "./pages/OverOns";
-import Contact from "./pages/Contact";
-import AfspraakMaken from "./pages/AfspraakMaken";
+import { Home, Aanbod, OverOns, Contact, AfspraakMaken } from "./pages";
+import { Navbar, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
-import Navbar from "./pages/Navigation";
+import "./styling/global.css";
 
 function App() {
   return (
@@ -18,7 +14,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/afspraak-maken" element={<AfspraakMaken />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

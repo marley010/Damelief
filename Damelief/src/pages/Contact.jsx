@@ -46,7 +46,7 @@ function Contact() {
         </div>
       <form className="contact__form" onSubmit={submitForm}>
         <div className="contact__form__container-double">
-          <div className="contact__form__container">
+          <div>
             <label htmlFor="firstname">Voornaam:</label>
             <input
               type="text"
@@ -58,7 +58,7 @@ function Contact() {
               }
             />
           </div>
-          <div className="contact__form__container">
+          <div>
             <label htmlFor="lastname">Achternaam:</label>
             <input
               type="text"
