@@ -1,7 +1,7 @@
 import { Home, Aanbod, OverOns, Contact, AfspraakMaken } from "./pages";
 import { Navbar, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
-import "./styling/global.css";
+import "./styling/global.scss";
 
 function App() {
   return (

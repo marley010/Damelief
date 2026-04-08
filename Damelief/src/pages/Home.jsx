@@ -1,5 +1,3 @@
-import Navbar from "./Navigation";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
