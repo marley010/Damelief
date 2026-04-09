@@ -22,19 +22,26 @@ function AfspraakMaken() {
       date: e.target.date.value,
       message: e.target.message.value,
     };
-    
+
     try {
       const response = await fetch("http://localhost:3001/api/send-afspraak", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValues),
       });
-      
+
       const result = await response.json();
       if (response.ok) {
         console.log("Email sent successfully:", result);
         alert("Bedankt! Uw afspraak aanvraag is verzonden.");
-        setFormData({ firstname: "", lastname: "", email: "", phone: "", date: "", message: "" });
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          date: "",
+          message: "",
+        });
       } else {
         console.error("Error sending email:", result);
         alert("Error sending email. Please try again.");
