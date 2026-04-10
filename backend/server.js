@@ -1,7 +1,10 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { sendContactEmail, sendAfspraakEmail } from "./src/utils/emailService.js";
+import {
+  sendContactEmail,
+  sendAfspraakEmail,
+} from "./src/utils/emailService.js";
 
 dotenv.config();
 
@@ -43,7 +46,13 @@ app.post("/api/send-afspraak", async (req, res) => {
     }
 
     const fullName = `${firstname} ${lastname}`;
-    const result = await sendAfspraakEmail(email, fullName, phone, date, message);
+    const result = await sendAfspraakEmail(
+      email,
+      fullName,
+      phone,
+      date,
+      message,
+    );
     res.json({ success: true, messageId: result.id });
   } catch (error) {
     console.error("Error sending email:", error);
