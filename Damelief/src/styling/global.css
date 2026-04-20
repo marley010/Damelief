@@ -442,6 +442,47 @@
   font-weight: 900;
   font-style: italic;
 }
+.homepage__voorWie {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 0;
+}
+.homepage__voorWie .headersecond {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8rem;
+}
+.homepage__voorWie .headersecond h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.homepage__voorWie .infoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+.homepage__voorWie .infoBox div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 20vw;
+  max-height: 40vh;
+  padding: 2rem;
+  background-color: #FCFAF8;
+  box-shadow: 4px 4px 4px rgba(214, 184, 123, 0.1921568627);
+  border-radius: 1.5rem;
+  margin: 0 2rem 2rem 0;
+  gap: 1rem;
+}
+.homepage__voorWie .infoBox .emoji {
+  font-size: 1.5rem;
+  background-color: rgba(214, 184, 123, 0.3294117647);
+  border-radius: 50rem;
+  padding: 0.5rem;
+  width: 3rem;
+}
 
 .navbar {
   display: flex;
