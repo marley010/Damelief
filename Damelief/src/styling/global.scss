@@ -1,16 +1,16 @@
 // Global variables and mixins
-@import "./variables";
-@import "./fonts";
+@use "./variables";
+@use "./fonts";
 
 // Styles for individual pages
-@import "./pages/contact";
-@import "./pages/afspraak";
-@import "./pages/overons";
-@import "./pages/homepage";
+@use "./pages/contact";
+@use "./pages/afspraak";
+@use "./pages/overons";
+@use "./pages/homepage";
 
 // Styles for components
-@import "./components/navbar";
-@import "./components/footer";
+@use "./components/navbar";
+@use "./components/footer";
 
 * {
   margin: 0;
