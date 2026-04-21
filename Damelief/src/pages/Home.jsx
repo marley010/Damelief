@@ -131,7 +131,7 @@ function Home() {
       </section>
       <section className="homepage__Werkwijze">
         <div className="header">
-          <p>WERKWIJZE</p>
+          <p className="topicText">WERKWIJZE</p>
           <h2>Wat je kunt verwachten</h2>
           <p>Een traject met Damelief is altijd persoonlijk. Geen standaard programma,
             <br />

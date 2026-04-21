@@ -167,7 +167,10 @@
             display: flex;
             flex-direction: column;
             padding: 5rem 0;
-            background-color: #f7f5f2 ;
+            background-image: url('../../assets/images/1.png');
+            background-position: center;
+            background-size: cover;
+            // background-color: #f7f5f2 ;
 
             .headerthird {
                 display: flex;
@@ -204,7 +207,7 @@
                     max-width: 27.2vw;
                     min-height: 26vh;
                     padding: 2rem;
-                    background-color: #ddd1c048;
+                    background-color: #ffffff98;
                     border-radius: 1.5rem;
                     margin: 0 2rem 2rem 0;
                     gap: 0.6rem; 
@@ -263,7 +266,10 @@
             display: flex;
             flex-direction: column;
             padding: 5rem 0;
-            background-color: #f7f5f2 ;
+            background-image: url('../../assets/images/2.png');
+            background-position: center;
+            background-size: cover;
+            // background-color: #f7f5f2 ;
 
             .header {
                 display: flex;
@@ -300,7 +306,7 @@
                     max-width: 41.5vw;
                     min-height: 20vh;
                     padding: 2rem;
-                    background-color: #ffffff;
+                    background-color: #ffffff98;
                     border-radius: 1.5rem;
                     margin: 0 2rem 2rem 0;
                     gap: 0.6rem; 
