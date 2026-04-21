@@ -142,6 +142,11 @@
                     border-radius: 1.5rem;
                     margin: 0 2rem 2rem 0;
                     gap: 1rem; 
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+
+                div:hover {
+                  transform: translateY(3px);
                 }
 
                 h3, p {
@@ -203,6 +208,11 @@
                     border-radius: 1.5rem;
                     margin: 0 2rem 2rem 0;
                     gap: 0.6rem; 
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+                
+                div:hover {
+                  transform: translateY(3px);
                 }
 
                 h3 {
