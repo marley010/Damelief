@@ -199,15 +199,41 @@
   background-color: #c4e2d1;
 }
 
-.afspraak {
+.afspraakPage {
+  display: flex;
   width: 100vw;
   height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.afspraakPage .header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.afspraakPage__ruleSet {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  height: 68vh;
+}
+.afspraakPage__ruleSet .rules {
+  width: 20vw;
+  background-color: #F2F8F4;
+  padding: 3rem;
+  box-shadow: 4px 4px 4px rgba(70, 108, 87, 0.4235294118);
+  border-radius: 2rem;
+}
+.afspraakPage__ruleSet .afspraak {
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
+  display: flex;
   gap: 4rem;
 }
-.afspraak__form {
+.afspraakPage__ruleSet .afspraak__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,50 +243,50 @@
   width: 50vw;
   background-color: #F2F8F4;
   padding: 3rem;
-  border-radius: 3rem;
   box-shadow: 4px 4px 4px rgba(70, 108, 87, 0.4235294118);
+  border-radius: 2rem;
 }
-.afspraak__form__container {
+.afspraakPage__ruleSet .afspraak__form__container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.afspraak__form__container label {
+.afspraakPage__ruleSet .afspraak__form__container label {
   margin-bottom: 0.5rem;
   color: #466c57;
 }
-.afspraak__form__container div {
+.afspraakPage__ruleSet .afspraak__form__container div {
   display: flex;
   flex-direction: row;
 }
-.afspraak__form__container input,
-.afspraak__form__container textarea {
+.afspraakPage__ruleSet .afspraak__form__container input,
+.afspraakPage__ruleSet .afspraak__form__container textarea {
   padding: 1.2rem;
   min-width: 80%;
   border: none;
 }
-.afspraak__form__container-double {
+.afspraakPage__ruleSet .afspraak__form__container-double {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   width: 100%;
 }
-.afspraak__form__container-double label {
+.afspraakPage__ruleSet .afspraak__form__container-double label {
   margin-bottom: 0.5rem;
   color: #466c57;
 }
-.afspraak__form__container-double div {
+.afspraakPage__ruleSet .afspraak__form__container-double div {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-.afspraak__form__container-double input,
-.afspraak__form__container-double textarea {
+.afspraakPage__ruleSet .afspraak__form__container-double input,
+.afspraakPage__ruleSet .afspraak__form__container-double textarea {
   padding: 1.2rem;
   min-width: 80%;
   border: none;
 }
-.afspraak__form__button {
+.afspraakPage__ruleSet .afspraak__form__button {
   padding: 0.8rem 4rem;
   margin-top: 1.5rem;
   font-size: 17px;
@@ -271,10 +297,10 @@
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(70, 108, 87, 0.4235294118);
 }
-.afspraak__form__button:hover {
+.afspraakPage__ruleSet .afspraak__form__button:hover {
   background-color: #c4e2d1;
 }
-.afspraak__button {
+.afspraakPage__ruleSet .afspraak__button {
   padding: 1rem 4rem;
   font-size: 24px;
   background-color: #ddefe5;
@@ -283,7 +309,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.afspraak__button:hover {
+.afspraakPage__ruleSet .afspraak__button:hover {
   background-color: #c4e2d1;
 }
 

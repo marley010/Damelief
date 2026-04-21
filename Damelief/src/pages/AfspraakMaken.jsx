@@ -52,89 +52,97 @@ function AfspraakMaken() {
     }
   };
   return (
-    <section className="afspraak">
-      <h1>Afspraak Maken</h1>
-      <p>Dit is de afspraak maken pagina.</p>
-      <form className="afspraak__form" onSubmit={submitForm}>
-        <div className="afspraak__form__container-double">
-          <div>
-            <label htmlFor="firstname">Voornaam:</label>
+    <main className="afspraakPage">
+      <section className="header">
+        <h1>AFSPRAAK MAKEN</h1>
+        <p>Dit is de afspraak maken pagina.</p>
+      </section>
+      <section className="afspraakPage__ruleSet">
+        <article className="rules">
+        <h2>INFO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut et dicta magnam adipisci expedita ducimus, cum a aperiam veniam ea in omnis pariatur soluta qui dolores, at ad distinctio?</p>
+        </article>
+        <article className="afspraak__afspraakForm">
+        <form className="afspraak__form" onSubmit={submitForm}>
+          <div className="afspraak__form__container-double">
+            <div>
+              <label htmlFor="firstname">Voornaam:</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                value={formData.firstname}
+                onChange={(e) =>
+                  setFormData({ ...formData, firstname: e.target.value })
+                }
+              />
+            </div>
+            <div>
+              <label htmlFor="lastname">Achternaam:</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                value={formData.lastname}
+                onChange={(e) =>
+                  setFormData({ ...formData, lastname: e.target.value })
+                }
+              />
+            </div>
+          </div>
+          <div className="afspraak__form__container">
+            <label htmlFor="phone">Telefoonnummer:</label>
             <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              value={formData.firstname}
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
               onChange={(e) =>
-                setFormData({ ...formData, firstname: e.target.value })
+                setFormData({ ...formData, phone: e.target.value })
               }
             />
           </div>
-          <div>
-            <label htmlFor="lastname">Achternaam:</label>
+          <div className="afspraak__form__container">
+            <label htmlFor="email">Email:</label>
             <input
-              type="text"
-              id="lastname"
-              name="lastname"
-              value={formData.lastname}
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
               onChange={(e) =>
-                setFormData({ ...formData, lastname: e.target.value })
+                setFormData({ ...formData, email: e.target.value })
               }
             />
           </div>
-        </div>
-        <div className="afspraak__form__container">
-          <label htmlFor="phone">Telefoonnummer:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={(e) =>
-              setFormData({ ...formData, phone: e.target.value })
-            }
-          />
-        </div>
-        <div className="afspraak__form__container">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
-          />
-        </div>
-        <div className="afspraak__form__container">
-          <label htmlFor="date">Datum:</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            value={formData.date}
-            onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-          />
-        </div>
-        <div className="afspraak__form__container">
-          <label htmlFor="message">Bericht:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
-          ></textarea>
-        </div>
-        <button className="afspraak__form__button" type="submit">
-          Verstuur
-        </button>
-      </form>
-      <button className="afspraak__button" onClick={() => navigate(-1)}>
-        Back
-      </button>
-    </section>
+         <div className="afspraak__form__container">
+            <label htmlFor="date">Datum:</label>
+           <input
+              type="date"
+              id="date"
+              name="date"
+              value={formData.date}
+              onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+            />
+          </div>
+          <div className="afspraak__form__container">
+            <label htmlFor="message">Bericht:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+            >
+            </textarea>
+         </div>
+          <button className="afspraak__form__button" type="submit">
+            Verstuur
+          </button>
+        </form>
+        </article>
+      </section>
+    </main>
   );
 }
 

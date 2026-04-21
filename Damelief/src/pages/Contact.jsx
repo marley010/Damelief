@@ -134,9 +134,6 @@ function Contact() {
           </button>
         </form>
       </section>
-      <button className="contact__button" onClick={() => navigate(-1)}>
-        Back
-      </button>
     </section>
   );
 }
