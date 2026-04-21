@@ -43,7 +43,7 @@ function Home() {
       </article>
       <section className="homepage__voorWie">
         <div className="headersecond">
-          <p>VOOR WIE</p>
+          <p className="topicText">VOOR WIE</p>
           <h2>Herken jij dit?</h2>
           <p>
             Je doet alles goed: gezond eten, sporten, mediteren, maar je voelt je nog steeds uitgeput. 
@@ -94,12 +94,40 @@ function Home() {
             <h3>Je zet jezelf vaak op de laatste plek</h3>
             <p>Je past je aan, voelt je snel schuldig en houdt rekening met iedereen—behalve met jezelf. Je eigen behoeften verdwijnen naar de achtergrond.</p>
           </div>
-          <div>
-            <p className="emoji">🧩</p>
-            <h3>Je voelt je vastzitten zonder duidelijke reden</h3>
-            <p>Er is een gevoel van stilstand of onrust, maar je kunt er geen concrete oorzaak aan koppelen. Alsof er iets onder de oppervlakte speelt.</p>
-         </div>
        </article>
+      </section>
+      <section className="homepage__sectionThree">
+        <article className="headerthird">
+          <p className="topicText">MIJN AANPAK</p>
+          <h2>Lichaam, geest & systeem</h2>
+          <p>Ik combineer drie disciplines tot één persoonlijk traject, Alles hangt samen
+            <br />
+          en dat is precies hoe ik werk.
+          </p>
+        </article>
+        <article className="infoBox">
+          <div>
+            <h3>01</h3>
+            <h4>Orthomoleculaire Therapie</h4>
+            <p>Via voeding en gerichte suppletie breng ik jouw biochemie in balans. Gericht op cellen, hormonen en energie op een fundementeel niveau.</p>
+          </div>
+          <div>
+            <h3>02</h3>
+            <h4>Epignetica</h4>
+            <p>Jouw genen zijn niet jouw lot. Met epignetica kijken we hoe leefstijl, voeding en omgeving je genexpressie beïnvloeden en hoe je dat kunt sturen.</p>
+          </div>
+          <div>
+            <h3>03</h3>
+            <h4>Systemisch Coachen</h4>
+            <p>Patronen en overtuigingen die je tegenhouden komen van ergens. Samen onderzoeken we die. Zodat jij je potentieel kan leven.</p>
+          </div>
+        </article>
+      </section>
+      <section className="homepage__Quote">
+          <h2>"Kleine Aanpassingen in je voeding kunnen grote 
+               <br />
+               verschuivingen veroozaken."</h2>
+          <p> — DAMELIEF </p>
       </section>
 
     

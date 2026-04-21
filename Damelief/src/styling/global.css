@@ -445,7 +445,7 @@
 .homepage__voorWie {
   display: flex;
   flex-direction: column;
-  margin: 6rem 0;
+  margin: 6rem 0 4rem 0;
 }
 .homepage__voorWie .headersecond {
   display: flex;
@@ -455,6 +455,12 @@
 .homepage__voorWie .headersecond h2 {
   font-size: 3rem;
   margin: 1rem 0;
+  color: #D6B77B;
+}
+.homepage__voorWie .headersecond .topicText {
+  color: #466c57;
+  font-size: 1.1rem;
+  font-weight: 900;
 }
 .homepage__voorWie .infoBox {
   display: flex;
@@ -468,20 +474,99 @@
   flex-direction: column;
   justify-content: center;
   max-width: 20vw;
-  max-height: 40vh;
+  min-height: 27vh;
   padding: 2rem;
-  background-color: #FCFAF8;
-  box-shadow: 4px 4px 4px rgba(214, 184, 123, 0.1921568627);
+  background-color: rgba(183, 209, 194, 0.3764705882);
+  box-shadow: 4px 4px 4px rgba(80, 105, 94, 0.1921568627);
   border-radius: 1.5rem;
   margin: 0 2rem 2rem 0;
   gap: 1rem;
 }
+.homepage__voorWie .infoBox h3, .homepage__voorWie .infoBox p {
+  color: #294737;
+}
 .homepage__voorWie .infoBox .emoji {
   font-size: 1.5rem;
-  background-color: rgba(214, 184, 123, 0.3294117647);
+  background-color: rgba(255, 255, 255, 0.329);
   border-radius: 50rem;
   padding: 0.5rem;
   width: 3rem;
+}
+.homepage__sectionThree {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  background-color: #f7f5f2;
+}
+.homepage__sectionThree .headerthird {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8rem;
+}
+.homepage__sectionThree .headerthird h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #b89a7a;
+}
+.homepage__sectionThree .headerthird .topicText {
+  color: #81664a;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.homepage__sectionThree .headerthird p {
+  color: #81664a;
+}
+.homepage__sectionThree .infoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+.homepage__sectionThree .infoBox div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 25vw;
+  min-height: 26vh;
+  padding: 2rem;
+  background-color: rgba(221, 209, 192, 0.2823529412);
+  border-radius: 1.5rem;
+  margin: 0 2rem 2rem 0;
+  gap: 0.6rem;
+}
+.homepage__sectionThree .infoBox h3 {
+  color: #b89a7a;
+  font-size: 4rem;
+  font-weight: 100;
+}
+.homepage__sectionThree .infoBox h4 {
+  font-size: 1.4rem;
+}
+.homepage__sectionThree .infoBox h4, .homepage__sectionThree .infoBox p {
+  color: #81664a;
+}
+.homepage__sectionThree .infoBox p {
+  font-size: 1.2rem;
+}
+.homepage__Quote {
+  background-color: #add3be;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  gap: 2rem;
+}
+.homepage__Quote h2 {
+  color: #294737;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 4rem;
+}
+.homepage__Quote p {
+  color: #294737;
 }
 
 .navbar {
