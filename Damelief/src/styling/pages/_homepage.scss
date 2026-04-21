@@ -150,7 +150,7 @@
                 }
 
                 h3, p {
-                        color: #294737;
+                        color: #3f6b54;
                     }
 
                 .emoji {
@@ -201,7 +201,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    max-width: 25vw;
+                    max-width: 27.2vw;
                     min-height: 26vh;
                     padding: 2rem;
                     background-color: #ddd1c048;
@@ -237,16 +237,17 @@
         }
 
         &__Quote {
-            background-color:#add3be;
+            background-color:#cbe2d5;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             min-height: 40vh;
             gap: 2rem;
+            padding: 0 5rem;
 
             h2 {
-                color: #294737;
+                color: #6f8d7d;
                 font-style: italic;
                 font-size: 2.5rem;
                 text-align: center;
@@ -256,6 +257,71 @@
             p {
                 color: #294737;
             }
+        }
+
+        &__Werkwijze {
+            display: flex;
+            flex-direction: column;
+            padding: 5rem 0;
+            background-color: #f7f5f2 ;
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                margin-left: 8rem;
+                
+                h2 {
+                    font-size: 3rem;
+                    margin: 1rem 0;
+                    color: #b89a7a ;
+                }
+
+                .topicText {
+                    color: #81664a;
+                    font-size: 1.1rem;
+                    font-weight: 900;
+                }
+
+                p {
+                    color: #81664a;
+                }
+            }
+            .infoBox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 3rem 0;
+                flex-wrap: wrap;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    max-width: 41.5vw;
+                    min-height: 20vh;
+                    padding: 2rem;
+                    background-color: #ffffff;
+                    border-radius: 1.5rem;
+                    margin: 0 2rem 2rem 0;
+                    gap: 0.6rem; 
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+                
+                div:hover {
+                  transform: translateY(3px);
+                }
+
+                h3 {
+                    color: #81664a;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: #81664a;
+                }
+            }
+             
         }
 }
 

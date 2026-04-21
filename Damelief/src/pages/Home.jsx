@@ -129,6 +129,34 @@ function Home() {
                verschuivingen veroozaken."</h2>
           <p> — DAMELIEF </p>
       </section>
+      <section className="homepage__Werkwijze">
+        <div className="header">
+          <p>WERKWIJZE</p>
+          <h2>Wat je kunt verwachten</h2>
+          <p>Een traject met Damelief is altijd persoonlijk. Geen standaard programma,
+            <br />
+            maar een aanpak die past bij jouw lichaam, jouw leven en jouw tempo.</p>
+        </div>
+        <article className="infoBox">
+          <div>
+            <h3>Educatie en Inzicht</h3>
+            <p>Je begrijpt wat er met jouw lichaam gebeurt. Kennis over voeding, hormonen en epigenetics- helder uitgelegd, toepasbaar in je dagelijks leven.</p>
+          </div>
+          <div>
+            <h3>Inspiratie en Motivatie</h3>
+            <p>Niet focussen op wat niet kan - maar ontdekken wat er mogelijk is. Met een blik die opent in plaats van-</p>
+          </div>
+          <div>
+            <h3>Persoonlijke Verbinding</h3>
+            <p>Ik leer jou kennen- jouw verhaal, jouw systeem, jouw ritme. Zo is elk traject anders en precies goed.</p>
+          </div>
+          <div>
+            <h3>Duurzame Veranderingen</h3>
+            <p>Geen quick fix, maar een fundament. Zodat die balans die je opbouwt ook blijft- als jouw nieuwe normaal.</p>
+          </div>
+
+        </article>
+      </section>
 
     
     </main>
