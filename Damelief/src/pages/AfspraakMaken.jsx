@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-
 function AfspraakMaken() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
