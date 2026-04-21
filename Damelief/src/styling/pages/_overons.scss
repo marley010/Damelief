@@ -82,3 +82,89 @@
     }
   }
 }
+
+/* Grid container voor 4 hoeken */
+.page__qa-grid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Algemene kaart styling */
+.page__qa {
+  position: absolute;
+  max-width: 300px;
+  padding: 20px 25px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.page__qa:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.55);
+}
+
+/* Titel */
+.page__qa h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Tekst */
+.page__qa p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Posities (de 4 hoeken) */
+.page__qa--top-left {
+  top: 40px;
+  left: 40px;
+}
+
+.page__qa--top-right {
+  top: 40px;
+  right: 40px;
+  text-align: right;
+}
+
+.page__qa--bottom-left {
+  bottom: 40px;
+  left: 40px;
+}
+
+.page__qa--bottom-right {
+  bottom: 40px;
+  right: 40px;
+  text-align: right;
+}
+
+/* 📱 Mobile fix → onder elkaar */
+@media (max-width: 768px) {
+  .page__qa-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .page__qa {
+    position: relative;
+    max-width: 100%;
+    text-align: left !important;
+  }
+}
