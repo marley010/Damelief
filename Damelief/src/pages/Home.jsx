@@ -17,9 +17,6 @@ function Home() {
             <br />
             geen druk.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero  dolor, iaculis vitae sodales ac, consectetur vitae urna. Lorem ipsum.
-          </p>
           <div className="buttonRow">
             <button className="one">Gratis kennismakings gesprek</button>
             <button className="two">Mijn aanpak</button>
