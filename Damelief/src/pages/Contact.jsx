@@ -59,11 +59,6 @@ function Contact() {
         <div className="contact__socials">
           <h2>Contact gegevens</h2>
           <div className="line"></div>
-          <p className="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            libero dolor, iaculis vitae sodales ac, consectetur vitae urna.
-            Lorem ipsum.
-          </p>
           <p>Vragen zelf opzoeken?</p>
           <button>Veelgestelde Vragen</button>
         </div>
